@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Traffic Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="datetime" id="datetime"></div>
+    <h1 class="heading">Website Traffic Tracker</h1>
+    
+    <section class="input-section">
+      <h2>Add Website to Track</h2>
+      <div class="input-container">
+        <input 
+          type="text" 
+          id="websiteName" 
+          placeholder="Website Name (e.g., Google)"
+          class="input-field"
+        />
+        <input 
+          type="url" 
+          id="websiteUrl" 
+          placeholder="Website URL (e.g., https://google.com)"
+          class="input-field"
+        />
+        <button id="addWebsiteBtn" class="add-btn">Add Website</button>
+      </div>
+      <div id="inputError" class="error-message"></div>
+    </section>
+
+    <section class="history-section">
+      <h2>Tracked Websites</h2>
+      <div id="websitesList" class="websites-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-text">Built using Node.js, Express, and Socket.io.</div>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
