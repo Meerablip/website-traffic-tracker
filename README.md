@@ -1,6 +1,7 @@
 # Website Traffic Tracker
 
 A modern website traffic tracker that lets you add websites and track their user traffic in real-time using Node.js, Express, and Socket.io.
+(All the data that this project generates is pseudo data, to demonstrate how socket.io would function)
 
 ## Features
 
